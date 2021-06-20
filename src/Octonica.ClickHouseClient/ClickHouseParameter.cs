@@ -38,7 +38,7 @@ namespace Octonica.ClickHouseClient
     public class ClickHouseParameter : DbParameter, ICloneable
     {
         // https://github.com/ClickHouse/ClickHouse/blob/master/docs/en/query_language/syntax.md
-        private static readonly Regex ParameterNameRegex = new Regex("^[a-zA-Z_][0-9a-zA-Z_]*$");
+        private static readonly Regex ParameterNameRegex = new Regex("^[0-9a-zA-Z_]*$");
 
         private string _parameterName;
 
